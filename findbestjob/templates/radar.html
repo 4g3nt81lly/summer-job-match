@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey</title>
+	<link rel="stylesheet" href="/static/bootstrap/css/bootstrap.min.css" >
+	<!--loading bootstrap-->
+	<script src="/static/bootstrap/js/bootstrap.min.js"></script>
+	<style>
+		body {
+		    padding-top:20px;
+			padding-left:10px;
+			padding-right:10px;
+		}
+		li{
+			list-style-type:none;
+		}
+		.custom {
+			width: 100%;
+    height: 400px;
+    left: 10px;
+    color: #0062cc;
+		}
+	</style>
+</head>
+<body   >
+	<div style="width:400px;height:400px"  > {{radar_chart1|safe}} </div>
+	<br><br><br><br><br>
+	<div style="width:100%;height:400px;left:10px;"  class="custom"  > 
+	<ul>
+	<li><a  href="/findbestjob/radar?aid={{aid}}&jid={{job1.id}}" >Job:{{job1.title}}<br/>Company:{{job1.company}} </a> 	
+	</li>	
+	<li><a  href="/findbestjob/radar?aid={{aid}}&jid={{job2.id}}" >Job:{{job2.title}}<br/>Company:{{job2.company}}</a> 
+	</li>
+	<li>
+		<a  href="/findbestjob/radar?aid={{aid}}&jid={{job3.id}}" >Job:{{job3.title}}<br/>Company:{{job3.company}}</a> 
+    </li></ul>
+</div>
+
+</body>
+</html>

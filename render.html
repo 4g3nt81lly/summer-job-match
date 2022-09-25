@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Charts</title>
+  <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+</head>
+<body>
+  <div id="e49ba05b300d4219bbaefd1d2db82c90" class="chart-container" style="width:900px; height:500px;">
+  </div>
+  <script>
+    var chart_e49ba05b300d4219bbaefd1d2db82c90 = echarts.init(
+        document.getElementById('e49ba05b300d4219bbaefd1d2db82c90'),
+        'white', {renderer: 'canvas'});
+    var option_e49ba05b300d4219bbaefd1d2db82c90 = {
+      animation: true,
+      animationThreshold: 2000,
+      animationDuration: 1000,
+      animationEasing: "cubicOut",
+      animationDelay: 0,
+      animationDurationUpdate: 300,
+      animationEasingUpdate: "cubicOut",
+      animationDelayUpdate: 0,
+      color: ["#c23531", "#2f4554", "#61a0a8", "#d48265", "#749f83",
+              "#ca8622", "#bda29a", "#6e7074", "#546570", "#c4ccd3",
+              "#f05b72", "#ef5b9c", "#f47920", "#905a3d", "#fab27b",
+              "#2a5caa", "#444693", "#726930", "#b2d235", "#6d8346",
+              "#ac6767", "#1d953f", "#6950a1", "#918597"],
+      series: [
+        {
+          type: "pie",
+          clockwise: true,
+          data: [
+            {
+              name: "\u54c8\u58eb\u5947",
+              value: 117
+            },
+            {
+              name: "\u8428\u6469\u8036",
+              value: 132
+            },
+            {
+              name: "\u6cf0\u8fea",
+              value: 128
+            },
+            {
+              name: "\u91d1\u6bdb",
+              value: 52
+            },
+            {
+              name: "\u7267\u7f8a\u72ac",
+              value: 86
+            },
+            {
+              name: "\u5409\u5a03\u5a03",
+              value: 34
+            },
+            {
+              name: "\u67ef\u57fa",
+              value: 76
+            }
+          ],
+          radius: ["0%", "75%"],
+          center: ["50%", "50%"],
+          label: {
+            show: true,
+            position: "top",
+            margin: 8,
+            formatter: "{b}: {c}"
+          },
+          rippleEffect: {
+            show: true,
+            brushType: "stroke",
+            scale: 2.5,
+            period: 4
+          }
+        }
+      ],
+      legend: [
+        {
+          data: [
+            "\u54c8\u58eb\u5947",
+            "\u8428\u6469\u8036",
+            "\u6cf0\u8fea",
+            "\u91d1\u6bdb",
+            "\u7267\u7f8a\u72ac",
+            "\u5409\u5a03\u5a03",
+            "\u67ef\u57fa"
+          ],
+          selected: {},
+          show: true,
+          padding: 5,
+          itemGap: 10,
+          itemWidth: 25,
+          itemHeight: 14
+        }
+      ],
+      tooltip: {
+        show: true,
+        trigger: "item",
+        triggerOn: "mousemove|click",
+        axisPointer: {
+          type: "line"
+        },
+        showContent: true,
+        alwaysShowContent: false,
+        showDelay: 0,
+        hideDelay: 100,
+        textStyle: {
+          fontSize: 14
+        },
+        borderWidth: 0,
+        padding: 5
+      },
+      title: [
+        {
+          text: "Pie-\u57fa\u672c\u793a\u4f8b",
+          padding: 5,
+          itemGap: 10
+        }
+      ]
+    };
+    chart_e49ba05b300d4219bbaefd1d2db82c90.setOption(option_e49ba05b300d4219bbaefd1d2db82c90);
+    </script>
+</body>
+</html>

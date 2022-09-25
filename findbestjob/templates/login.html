@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+	<link rel="stylesheet" href="/static/bootstrap/css/bootstrap.min.css" >
+	<script src="/static/bootstrap/js/bootstrap.min.js"></script>
+	<style>
+		.best-bg {
+			background: #0C5460;
+      background-image: url(/static/images/login-bg.jpg);
+      background-size: cover;
+      background-position: center center;
+		}
+	</style>
+</head>
+<body class='best-bg' style="height:100%;">
+	<div style="overflow-y:hidden;" >
+		<div  class="row " >
+			<div class="col"></div>
+			<div class="col"  style="position:relative;height:500px;">
+				<div style="height:100%; position: absolute; top: 50%; left: 50%; height: 30%; width: 50%; margin: -15% 0 0 -25%;"    >
+				 <form action="" method="post" validate>
+
+				 	<H1>Please login</H1>
+				    {% csrf_token %}
+
+				    <div>{{ obj.account.label }}   {{ obj.account }}</div>
+				     <div>{{ obj.password.label }}   {{ obj.password }}</div>
+				    <br/>
+					<div>{{errorInfo}}</div>
+				    <div class="text-center">
+              <input type="submit"  class=" form-control btn btn-warning center" value="login">
+				    </div >
+				</form>
+			   </div>
+			</div>
+			<div class="col">
+
+			</div>
+
+		</div>
+		<div  class="row " style="height:768px;" ></div>
+
+ 	</div>
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+# macOS files
+**/.DS_Store
+
+# Playground files
+**/__pycache__
+**/__pycache__/**
+
+# Secret key
+**/secret-key.txt

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+	<style>
+		 .login {
+			
+		 }
+	</style>
+</head>
+<body>
+<form action="" method="post" validate>
+    {% csrf_token %}
+	<H1>Please register </H1>
+	<div  class="login">
+	{% for field in obj %}
+		<p>{{ field.label }} </p> <p> {{ field }}</p>
+	{% endfor %}	
+	<!--
+    <p>{{ obj.name.label }}   {{ obj.name }}</p>
+    <p>{{ obj.account.label }}   {{ obj.account }}</p>
+	<p>{{ obj.password.label }}   {{ obj.password }}</p>
+    <p>{{ obj.gender.label }}   {{ obj.gender }}</p>
+	<p>{{ obj.age.label }}   {{ obj.age }}</p>
+    <p>{{ obj.address.label }}   {{ obj.address }}</p>
+    -->
+    <input type="submit" value="submit">
+	</div>
+</form>
+
+
+</body>
+</html>
